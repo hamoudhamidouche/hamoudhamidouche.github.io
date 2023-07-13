@@ -2,7 +2,7 @@ body{
     overflow: hidden;
     width: 100%;
     margin: 60px auto ;
-    background-color: hsl(30, 38%, 92%);
+    background-color: #f2ebe3;
 }
 
 .card-container {
