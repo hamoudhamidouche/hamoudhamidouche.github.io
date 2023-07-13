@@ -21,7 +21,9 @@ html, body{
 }
 h2{
     font-family: monospace;
-    letter-spacing: 1em;
+    letter-spacing: 0.7em;
+    color: #cdcdcd;
+    font-size: 12px;
 }
 .descr{
     font-size: 14px;
