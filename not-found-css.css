@@ -1,0 +1,56 @@
+html {
+    font-family: monospace;
+    overflow-x: hidden;
+}
+  
+body {
+    margin-left: 10px;
+}
+
+p {
+    font-size: 24px;
+}
+
+#firstpar {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#txt {
+    font-weight: 400;
+    width: 381px;
+    line-height: 35.54px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 64px;
+}
+
+img {
+    width: 100%;
+    height: 447.43px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.textt {
+    margin-left: 10px;
+    width: 586px;
+}
+
+button {
+    width: 216px;
+    height: 86px;
+    background-color: #363636;
+    color: white;
+}
+
+button:hover {
+    background-color: black;
+}
