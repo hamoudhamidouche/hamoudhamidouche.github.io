@@ -21,7 +21,6 @@ body{
     border-radius: 20px 0 0 20px;
 }
 .text-container {
-    border: 1px solid black;
     width: 300px;
     padding-left: 20px;
 }
@@ -32,11 +31,13 @@ h2{
     letter-spacing: 0.5em;
 }
 .descr{
+    border: 1px solid black;
     font-size: 14px;
     line-height: 1.3em;
     color: #a19f9f;
 }
 .price {
+    border: 1px solid black;
     display: inline;
     padding: 0 20px;
 }
@@ -50,6 +51,7 @@ h2{
     color: #cdcdcd;
 }
 .botn {
+    border: 1px solid black;
     margin-top: 40px;
     background-color: hsl(158, 36%, 37%);
     width: 200px;
