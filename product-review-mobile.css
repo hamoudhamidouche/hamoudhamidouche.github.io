@@ -1,0 +1,61 @@
+html, body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.card-container {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+.main-img{
+    content:url("image-product-mobile.jpg");
+    width: 100%;
+}
+.text-container {
+    width: 100%;
+    padding-left: 20px;
+}
+h2{
+    font-family: monospace;
+    letter-spacing: 1em;
+}
+.descr{
+    font-size: 14px;
+    line-height: 2em;
+    color: #a19f9f;
+}
+.price {
+    display: inline;
+    padding: 0 20px;
+}
+.new {
+    color: hsl(158, 36%, 37%);
+    font-size: 36px;
+    font-weight: 700;
+}
+.old {
+    margin-left: 20px;
+    color: #cdcdcd;
+}
+.botn {
+    margin-top: 40px;
+    background-color: hsl(158, 36%, 37%);
+    width: 90%;
+    height: 30px;
+    text-align: center;
+    padding-top: 9px;
+    border-radius: 40px;
+}
+.botn:hover {
+    background-color: hsl(156, 35%, 18%);
+}
+
+a{
+    text-decoration: none;
+    color: white !important;
+    font-weight: 600;
+}
