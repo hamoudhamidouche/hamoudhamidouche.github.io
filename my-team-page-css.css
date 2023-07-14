@@ -1,0 +1,63 @@
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.main {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.second p {
+  width: 300px;
+}
+
+.box {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 260px;
+}
+
+.imag {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.im p {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.workers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+figcaption {
+  font-weight: 700;
+}
+
+.odd {
+  margin-top: 90px;
+}
+
+#foot {
+  margin: 50px 0;
+  color: #dcdcdc;
+  text-align: center;
+}
