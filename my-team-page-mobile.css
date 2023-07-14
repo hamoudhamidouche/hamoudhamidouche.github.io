@@ -51,7 +51,7 @@ body {
     font-weight: 700;
   }
   
-  .odd {
+  .two, .four, .six {
     margin-top: 90px;
   }
 
