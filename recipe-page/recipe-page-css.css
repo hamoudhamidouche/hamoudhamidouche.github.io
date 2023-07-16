@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+:root{
+    --font-1: 'Crimson Pro', serif;
+    --font-2: 'Montserrat', sans-serif;
+    --font-3: 'Lora', serif;
+    --font-4: 'Montserrat', sans-serif;
+    --font-5: 'Playfair Display', serif;
+    --themeColor: #000;
+    --lightColor: #A9A9A9;
+    --whiteColor: #fff;
+    --lightDarkColor: #828282;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--whiteColor);
+    color: var(--themeColor);
+}
+
+.allcontainer {
+    margin: 40px 60px;
+}
+
+header .mainheader {
+    margin: 0 auto;
+    width: 70%;
+}
+
+header .mainheader h1 {
+    font-family: var(--font-5);
+    font-size: 48px;
+}
+
+header .mainheader p {
+    font-family: var(--font-2);
+    font-size: 25px;
+}
+
+main {
+    width: 90%;
+    margin: 40px auto;
+}
+
+main .image {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+main .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .apart {
+    position: absolute;
+    width: 200px;
+    left: 75%;
+    font-family: var(--font-3);
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 2px 3px 7px 0px gainsboro;
+}
+
+main .left {
+    margin: 20 auto;
+}
+
+main .apart .inlined {
+    display: flex;
+    flex-direction: row;
+}
+
+main .apart .org {
+    color: orange;
+}
+
+main .apart i {
+    font-size: 20px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+main .inlined .lined {
+    padding-left: 10px;
+    line-height: 0.6rem;
+}
+
+main .inlined .lined h3{
+    color: var(--lightColor);
+}
+
+main .inlined .lined p {
+    font-weight: 700;
+}
+
+main .mainone {
+    width: 70%;
+}
+
+main .mainone h2{
+    font-family: var(--font-1);
+}
+
+main .mainone .recipe {
+    font-style: italic;
+    color: var(--lightDarkColor);
+}
+
+main .mainone form label {
+    display: block;
+    line-height: 3rem;
+    font-family: var(--font-2);
+}
+
+main .mainone form .activated{
+    color: var(--lightColor);
+}
+
+main .mainone .instr {
+    font-family: var(--font-4);
+}
+
+main .mainone .instr li {
+    line-height: 2rem;
+}
+
+main .mainone .instr li::before{
+    content: '......';
+    width: 100px;
+    height: 100px;
+    color: orange;
+    position: relative;
+    left: -20px;
+    opacity: 0.5;
+    border-radius: 20px;
+    background-color: orange;
+    display: inline;
+}
+
+main .mainone .instr li p {
+    display: inline;
+}
+
+main .mainone .instr a{
+    text-decoration: none;
+    margin-top: 100px;
+    padding-left: 100px;
+    font-weight: 700;
+    color: var(--lightDarkColor);
+    font-family: var(--font-2);
+    transition: all 1s;
+}
+
+main .mainone .instr a:hover {
+    color: orange;
+}
+
+footer {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    width: 90%;
+    text-align: center;
+    font-family: var(--font-2);
+    color: var(--lightColor);
+}
+footer p span {
+    font-weight: 800;
+    color: var(--lightDarkColor);
+}
+
+
+@media screen and (max-width: 900px) {
+    main .apart {
+        position: unset;
+        width: 300px;
+        font-family: var(--font-3);
+        border-radius: none;
+        box-shadow: none;
+        display: inline;
+    }
+
+    main .apart .left {
+        width: 500px;
+        margin-left: -50px;
+    }
+
+    main .apart .left .right {
+        display: flex;
+        flex-direction: row;
+    }
+    main .apart .left .inlined {
+        margin-top: 30px;
+        width: 140px;
+    } 
+}
