@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interior consultant</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="interior-v2-css.css">
+    </head>
+    <body>
+        <header>
+            <div class="mainheader">
+                <a href="" id="thisint">This Interior</a>
+                <ul class="notactive">
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">Collection</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li></li>
+                </ul>
+                <i id="x" class="fa-solid fa-bars-staggered"></i>
+                <i class="burg fa-solid fa-xmark"></i>
+            </div>
+        </header>
+
+        <main>
+            <div class="maincont">
+                <div class="leftcont">
+                    <h1>Modern Interior</h1>
+                    <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+                    <a href="">Read More  <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="rightcont">
+                    <img src="photo1.png" class="imgone" />
+                    <div class="designer">
+                        <div class="one">
+                            <img src="photo2.png" class="imgtwo" />
+                            <div class="expl">
+                                <h4>Aliza Webber</h4>
+                                <p>Interior Designer</p>
+                            </div>
+                        </div>
+                        <h2>Designed in 2020 by Aliza Webber</h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Designed by Hamoud</p>
+        </footer>
+    </body>
+    <script>
+        const br = document.querySelector('#x');
+        const mylist = document.querySelector('.notactive');
+        const exit = document.querySelector('.burg');
+
+        br.addEventListener('click' , () => {
+            mylist.classList.add('activelis');
+            exit.classList.add('burger');
+        })
+
+        exit.addEventListener('click' , () => {
+            mylist.classList.replace('activelis','notactive');
+            exit.classList.remove('burger');
+        })
+    </script>
+</html>
