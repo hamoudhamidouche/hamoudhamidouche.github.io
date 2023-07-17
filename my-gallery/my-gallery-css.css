@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+:root{
+    --font-1: 'Crimson Pro', serif;
+    --font-2: 'Montserrat', sans-serif;
+    --font-3: 'Lora', serif;
+    --font-4: 'Montserrat', sans-serif;
+    --font-5: 'Playfair Display', serif;
+    --themeColor: #4E5150;
+    --lightColor:#E5E5E5;
+    --whiteColor: #fff;
+    --lightDarkColor: #BDBDBD;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--whiteColor);
+    color: var(--themeColor);
+}
+
+header {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+header .image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+header .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+header .auth h2 {
+    font-family: var(--font-4);
+    color: var(--themeColor);
+    font-size: 24px;
+    margin-top: 0;
+}
+
+header .auth p {
+    font-family: var(--font-4);
+    color: var(--themeColor);
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+header .decrp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+header .decrp .nbrs {
+    width: 100px;
+    height: 67px;
+    border-radius: 12px;
+    font-family: var(--font-4);
+    font-weight: 700;
+    color: var(--lightDarkColor);
+    background-color: var(--lightColor);
+}
+
+header .decrp .nbrs h3 {
+    color: var(--themeColor);
+    margin-top: 15px;
+}
+
+header .decrp .nbrs p {
+    margin-top: -15px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3%;
+    width: 75%;
+    margin: 5% auto;
+}
+
+main .imgone {
+    width: 29%;
+    height: 30%;
+    margin-bottom: 30px;
+}
+
+main .imgtwo {
+    width: 60%;
+    height: 30%;
+}
+
+main .imgthree {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+main .imgfour {
+    width: 30%;
+    height: 30%;
+}
+
+main .imgfive {
+    width: 45%;
+    height: 30%;
+    margin-top: 5%;
+}
+
+main .imgsix {
+    width: 45%;
+    height: 50%;
+    margin-top: 5%;
+    margin-left: 9%;
+}
+
+main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 0;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+main img:hover {
+    transform: scale(1.03);
+}
+
+footer {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    width: 90%;
+    text-align: center;
+    font-family: var(--font-2);
+    color: var(--lightColor);
+}
+footer p span {
+    font-weight: 800;
+    color: var(--lightDarkColor);
+}
