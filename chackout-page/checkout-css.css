@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+:root{
+    --font-1: 'Crimson Pro', serif;
+    --font-2: 'Montserrat', sans-serif;
+    --font-3: 'Lora', serif;
+    --font-4: 'Montserrat', sans-serif;
+    --font-5: 'Playfair Display', serif;
+    --themeColor: #4E5150;
+    --lightColor:#E5E5E5;
+    --whiteColor: #fff;
+    --lightDarkColor: #F2F2F2;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    color: var(--themeColor);
+    background-color: var(--whiteColor);
+    font-family: var(--font-4);
+    overflow-x: hidden;
+}
+
+header h1 {
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+main .right {
+    width: 400px;
+    position: absolute;
+    left: 60%;
+    border-radius: 20px;
+    background-color: var(--lightDarkColor);
+}
+
+main .right .flx {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+main .right .image {
+    width: 135px;
+    height: 135px;
+    margin: 20px;
+}
+
+main .right .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+main .right .flx .txt {
+    margin-top: 9px;
+}
+
+main .right .txt h2 {
+    font-size: 16px;
+}
+
+main .right .txt .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+main .right .txt .pricenew {
+    font-size: 16px;
+    color: orange;
+    font-weight: 800;
+}
+
+main .right .txt .priceold {
+    margin-top: 18px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+main .right .txt .add {
+    width: 135px;
+    border-radius: 10px;
+    border: 1px solid var(--themeColor);
+    display: flex;
+    font-weight: 800;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+main .right .txt .add i {
+    margin-top: 15px;
+    font-size: larger;
+}
+
+main .right .blow {
+    width: 80%;
+    margin: 50px auto 0 auto;
+    font-weight: 800;
+}
+
+main .right .blow .inlined {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+main .left {
+    width: 50%;
+    margin-left: 90px;
+}
+
+main .left .info form label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+main .left .info .bordr {
+    height: 55px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid black;;
+}
+
+main .left .info form input{
+    width: 90%;
+    height: 50px;
+    font-size: 16px;
+    color: var(--themeColor);
+    font-weight: 700;
+    border: none;
+}
+
+main .left .info form input:focus{
+    border: none;
+    outline: none;
+}
+
+main .left .info .flow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+main .left .info span {
+    font-size: 8px;
+}
+
+main .left .info select {
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+main .left .info .flow .pcode {
+    width: 40%;
+    margin-top: -26px;
+    margin-left: 70px;
+}
+
+main .left .info .postal {
+    width: 80%;
+}
+
+main .left .info .check {
+    width: unset;
+    height: unset;
+}
+
+main .left .info button {
+    width: 166px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    background-color: orange;
+    color: var(--whiteColor);
+    font-weight: 800;
+    margin-left: 65%;
+}
+
+footer {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    width: 90%;
+    text-align: center;
+    font-family: var(--font-2);
+    color: var(--lightColor);
+}
+footer p span {
+    font-weight: 800;
+    color: var(--lightDarkColor);
+}
+
+@media screen and (max-width: 900px) {
+    main .right {
+        width: 90%;
+        margin: 0 auto;
+        position: unset;
+        border-radius: 20px;
+        background-color: var(--lightDarkColor);
+    }
+
+    main .left {
+        width: 60%;
+        margin-left: 90px;
+    }
+
+    main .left .info form input{
+        width: 60%;
+        height: 50px;
+        font-size: 10px;
+        color: var(--themeColor);
+        font-weight: 700;
+        border: none;
+    }
+
+    main .left .info select {
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 2px;
+        margin-bottom: 10px;
+    }
+
+    main .left .info .flow .pcode {
+        width: 90%;
+        margin-top: -26px;
+        margin-left: 3px;
+    }
+
+    main .left .info .postal {
+        width: 60%;
+    }
+}
