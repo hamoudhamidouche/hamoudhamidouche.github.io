@@ -517,7 +517,7 @@ footer p span {
     }
 
     main .project .proj .descrp {
-        width: 100%;
+        width: 90%;
     }
 
     main .project .proj .descrp .btn {
@@ -526,6 +526,7 @@ footer p span {
         flex-wrap: nowrap;
         justify-content: space-around;
         margin: 10px 0;
+        width: 30%;
     }
 
     main .exp {
