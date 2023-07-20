@@ -522,11 +522,11 @@ footer p span {
 
     main .project .proj .descrp .btn {
         display: flex;
+        width: 30%;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-around;
+        gap: 90px;
         margin: 10px 0;
-        width: 30%;
     }
 
     main .exp {
