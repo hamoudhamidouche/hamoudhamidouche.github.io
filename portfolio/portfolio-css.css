@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+:root{
+    --font-1: 'Crimson Pro', serif;
+    --font-2: 'Montserrat', sans-serif;
+    --font-3: 'Lora', serif;
+    --font-4: 'Montserrat', sans-serif;
+    --font-5: 'Playfair Display', serif;
+    --font-6: 'Poppins', sans-serif;
+    --themeColor: #333333;
+    --darkColor:#100E1D;
+    --whiteColor: #fff;
+    --lightDarkColor: #F2F2F2;
+    --linkcolor: #2D9CDB;
+    --linkfocus: #70b4db;
+    --redcolor: #EB5757;
+    --graycolor: #808080;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    color: var(--themeColor);
+    background-color: var(--lightDarkColor);
+    font-family: var(--font-6);
+    overflow-x: hidden;
+}
+
+main {
+    max-height: 2500px;
+}
+
+main .mainport {
+    width: 85%;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--whiteColor);
+    box-shadow: 0px 5px 15px 0px gray;
+    transition: all 0.3s;
+}
+
+main .mainport:hover {
+    transform: scale(1.05);
+}
+
+main .mainport .image {
+    width: 270px;
+    height: 300px;
+}
+
+main .mainport .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+main .mainport .who {
+    width: 70%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main .mainport .who .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .mainport .who .row .billy h1 {
+    font-size: 24px;
+}
+
+main .mainport .who .row .billy p {
+    font-size: 18px;
+    margin-top: -10px;
+    color: var(--graycolor);
+}
+
+main .mainport .who .row .ctcme i {
+    display: inline;
+    font-size: 18px;
+}
+
+main .mainport .who .row .ctcme p {
+    display: inline;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+main .mainport .who .descrp  p {
+    font-size: 18px;
+    width: 90%;
+    line-height: 22px;
+    color: var(--graycolor);
+}
+
+main .skills {
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    left: 6%;
+    background-color: var(--whiteColor);
+    box-shadow: 0px 5px 15px 0px gray;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+main .skills:hover {
+    transform: scale(1.05);
+}
+
+main .skills h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+main .skills .liskl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+main .skills .liskl .right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+main .skills .liskl .right .bar {
+    width: 200px;
+    margin-left: 40px;
+    height: 9px;
+    border-radius: 9px;
+    background-color: var(--lightDarkColor);
+}
+
+main .skills .liskl .right .html {
+    width: 190px;
+    height: 9px;
+    border-radius: 9px;
+    background-color: var(--linkcolor);
+}
+
+main .skills .liskl .right .css {
+    width: 180px;
+    height: 9px;
+    border-radius: 9px;
+    background-color: var(--linkcolor);
+}
+
+main .skills .liskl .right .js {
+    width: 170px;
+    height: 9px;
+    border-radius: 9px;
+    background-color: var(--linkcolor);
+}
+
+main .project {
+    width: 57%;
+    position: relative;
+    left: 35%;
+    top: -270px;
+    padding: 20px;
+}
+
+main .project .head {
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: var(--whiteColor);
+    box-shadow: 0px 5px 15px 0px gray;
+}
+
+main .project .head h1 {
+    font-size: 25px;
+}
+
+main .project .proj {
+    margin-top: 80px;
+    border-radius: 20px;
+    padding-left: 20px;
+    background-color: var(--whiteColor);
+    box-shadow: 0px 5px 15px 0px gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: all 0.3s;
+}
+
+main .project .proj:hover {
+    transform: scale(1.05);
+}
+
+main .project .proj .image {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+main .project .proj .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+main .project .proj .descrp {
+    width: 50%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+main .project .proj .descrp h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--graycolor);
+}
+
+main .project .proj .descrp h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+main .project .proj .descrp p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--graycolor);
+    position: relative;
+    top: -10px;
+}
+
+main .project .proj .descrp .btn {
+    margin-bottom: 20px;
+}
+
+main .project .proj .descrp .btn .one {
+    text-decoration: none;
+    width: 130px;
+    padding: 10px;
+    height: 46px;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    color: var(--whiteColor);
+    background-color: var(--linkcolor);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+main .project .proj .descrp .btn .one:hover {
+    background-color: var(--linkfocus);
+}
+
+main .project .proj .descrp .btn .two {
+    text-decoration: none;
+    width: 130px;
+    height: 46px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid var(--linkcolor);
+    color: var(--linkcolor);
+    background-color: var(--whiteColor);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+main .project .proj .descrp .btn .two:hover {
+    background-color: var(--lightDarkColor);
+}
+
+main .exp {
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    left: 6%;
+    background-color: var(--whiteColor);
+    box-shadow: 0px 5px 15px 0px gray;
+    padding: 10px;
+    position: absolute;
+    top: 840px;
+    transition: all 0.3s;
+}
+
+main .exp:hover {
+    transform: scale(1.05);
+}
+
+main .exp h1 {
+    font-size: 24px;
+}
+
+main .exp .cmp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 37px 0;
+}
+
+main .exp .cmp .image {
+    width: 300px;
+    height: 70px;
+    margin: 10px;
+}
+
+main .exp .cmp .image img {
+    width: 100%;
+    height: 100%;
+}
+
+main .exp .cmp .what {
+    position: relative;
+    top: -6px;
+}
+
+main .exp .cmp .what p {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--graycolor);
+}
+
+main .exp .cmp .what h3 {
+    font-size: 18px;
+}
+
+main .hob {
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    left: 6%;
+    background-color: var(--whiteColor);
+    box-shadow: 0px 5px 15px 0px gray;
+    padding: 10px;
+    position: relative;
+    top: -360px;
+    transition: all 0.3s;
+}
+
+main .hob:hover {
+    transform: scale(1.05);
+}
+
+main .hob h2 {
+    font-size: 24px;
+}
+
+main .hob .each .image {
+    width: 300px;
+    height: 120px;
+}
+
+main .hob .each .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+main .hob .each h1 {
+    font-size: 18px;
+}
+
+main .hob .each p {
+    font-size: 16px;
+    color: var(--graycolor);
+}
+
+main .blg {
+    width: 57%;
+    position: relative;
+    left: 35%;
+    top: -920px;
+    padding: 20px;
+}
+
+main .blg .head {
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: var(--whiteColor);
+    box-shadow: 0px 5px 15px 0px gray;
+}
+
+main .blg .head h1 {
+    font-size: 24px;
+    line-height: 20px;
+}
+
+main .blg .txt {
+    margin-top: 60px;
+    border-radius: 20px;
+    padding-left: 20px;
+    background-color: var(--whiteColor);
+    box-shadow: 0px 5px 15px 0px gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+main .blg .txt:hover {
+    transform: scale(1.05);
+}
+
+main .blg .txt .blog {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+main .blg .txt .blog .hd {
+    font-size: 16px;
+    color: var(--graycolor);
+}
+
+main .blg .txt .blog .h1 {
+    font-size: 24px;
+}
+
+main .blg .txt .blog .mn {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--graycolor);
+    font-size: 18px;
+    line-height: 20px;
+}
+
+main .blg .txt .blog a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--linkcolor);
+    margin: 20px;
+}
+
+main .blg .txt .blog a:hover {
+    color: var(--linkfocus);
+}
+
+main .blg .txt .image {
+    width: 300px;
+    height: 250px;
+}
+
+main .blg .txt .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+footer {
+    width: 100%;
+    color: var(--graycolor);
+}
+
+footer p {
+    width: 90%;
+    text-align: center;
+}
+footer p span {
+    font-weight: 800;
+    color: var(--darkColor);
+}
+
+@media screen and (max-width: 1100px) {
+    main {
+        max-height: unset;
+    }
+    main .mainport .image {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    main .mainport .who{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    main .skills {
+        width: 90%;
+        left: 3%;
+    }
+
+    main .project {
+        width: 90%;
+        position: unset;
+    }
+
+    main .project .proj .image {
+        margin: 5px auto;
+    }
+
+    main .project .proj .descrp {
+        width: 100%;
+    }
+
+    main .project .proj .descrp .btn {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        margin: 10px 0;
+    }
+
+    main .exp {
+        width: 90%;
+        position: unset;
+        margin: 0 auto;
+    }
+
+    main .hob {
+        width: 90%;
+        position: unset;
+        margin: 30px auto;
+    }
+
+    main .hob .each .image {
+        width: 100%;
+    }
+
+    main .blg {
+        width: 90%;
+        position: unset;
+    }
+
+    main .blg .txt .blog {
+        width: 100%;
+    }
+
+    main .blg .txt .image {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
