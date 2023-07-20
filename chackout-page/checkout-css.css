@@ -231,6 +231,10 @@ footer p span {
         border: none;
     }
 
+    main .left .info form span {
+        display: none;
+    }
+
     main .left .info select {
         width: 100%;
         border: 1px solid black;
