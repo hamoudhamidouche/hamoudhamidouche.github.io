@@ -135,7 +135,12 @@
         function check() {
             let a = document.querySelector('#uno');
             let b = document.querySelector('#duos');
-            total.textContent = '$' + ((parseInt(a.textContent))*54.99 + (parseInt(b.textContent))*74.99).toFixed(2);
+            if ((parseInt(a.textContent) == 0)&&(parseInt(b.textContent) == '0')) {
+                total.textContent = '$' + (0).toFixed(2);
+            }
+            else {
+                total.textContent = '$' + ((parseInt(a.textContent))*54.99 + (parseInt(b.textContent))*74.99 + 19).toFixed(2);
+            }
         }
 
 
