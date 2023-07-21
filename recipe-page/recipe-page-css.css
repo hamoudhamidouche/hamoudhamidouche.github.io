@@ -183,6 +183,13 @@ footer p span {
 
 
 @media screen and (max-width: 900px) {
+    .allcontainer {
+        margin: 0;
+    }
+    
+    header {
+        width: 100%;
+    }
     main .apart {
         position: unset;
         width: 300px;
@@ -192,17 +199,17 @@ footer p span {
         display: inline;
     }
 
-    main .apart .left {
-        width: 500px;
-        margin-left: -50px;
-    }
-
     main .apart .left .right {
+        width: 100%;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
-    main .apart .left .inlined {
-        margin-top: 30px;
-        width: 140px;
-    } 
+
+    main .apart .left .right .inlined:nth-child(2) {
+        margin: 0 10px;
+    }
+    main .mainone  {
+        width: 100%;
+    }
 }
