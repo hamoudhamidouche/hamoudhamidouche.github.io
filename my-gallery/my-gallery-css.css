@@ -160,3 +160,9 @@ footer p span {
     font-weight: 800;
     color: var(--lightDarkColor);
 }
+
+@media screen and (max-width: 900px) {
+    main {
+        width: 90%;
+    }
+}
