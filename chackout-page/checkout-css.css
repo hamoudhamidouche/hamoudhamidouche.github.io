@@ -231,8 +231,20 @@ footer p span {
         border: none;
     }
 
-    main .left .info form span {
+    main .left .info form .flow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    main .left .info span {
         display: none;
+    }
+
+    main .left .info button {
+        width: 100%;
+        margin: 20px auto;
     }
 
     main .left .info select {
