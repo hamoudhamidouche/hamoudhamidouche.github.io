@@ -449,6 +449,10 @@ footer .foot .end {
         width: 90%;
     }
 
+    main .blg .flx .card {
+    margin-bottom: 20px;
+    }
+
     footer {
         padding-top: 50px;
     }
