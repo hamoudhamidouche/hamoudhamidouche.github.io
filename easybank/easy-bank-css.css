@@ -40,6 +40,7 @@ body {
     color: var(--themeColor);
     background-color: var(--whiteColor);
     font-family: var(--font-6);
+    overflow-x: hidden;
 }
 
 header {
@@ -53,7 +54,6 @@ header {
     align-items: center;
     background-color: var(--whiteColor);
     z-index: 99;
-    overflow-x: hidden;
 }
 
 header .nav ul {
