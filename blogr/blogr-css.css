@@ -206,7 +206,10 @@ header .navmob {
 }
 
 main .mainone {
-    background-image: linear-gradient(to left, var(--lightred), hsla(13, 100%, 72%, 0.9));
+    background: url('blogr-landing-page-main/images/bg-pattern-intro-mobile.svg'), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-position: left 30% top 51%;
+    background-size: 150%;
+    background-repeat: no-repeat;
     color: var(--whiteColor);
     padding-top: 210px;
     padding-bottom: 200px;
@@ -303,6 +306,10 @@ main .maintwo .txt p {
 }
 
 main .sa {
+    background: url('blogr-landing-page-main/images/bg-pattern-circles.svg');
+    background-position: left 0% top 51%;
+    background-size: 70%;
+    background-repeat: no-repeat;
     color: var(--whiteColor);
     background-color: var(--darkColor);
     padding: 100px 0;
@@ -480,6 +487,13 @@ footer ul li:first-child {
         color: var(--whiteColor);
     }
 
+    main .mainone {
+        background: url('blogr-landing-page-main/images/bg-pattern-intro-mobile.svg'), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        background-position: left 30% top 51%;
+        background-size: 200%;
+        background-repeat: no-repeat;
+    }
+
     main .mainone h1 {
         font-size: 35px;
     }
@@ -519,6 +533,19 @@ footer ul li:first-child {
 
     main .maintwo .txt p {
         color: var(--graycolor);
+    }
+
+    main .sa {
+        background: url('blogr-landing-page-main/images/bg-pattern-circles.svg');
+        background-position: left -100px top -300px;
+        background-size: 200%;
+        background-repeat: no-repeat;
+        color: var(--whiteColor);
+        background-color: var(--darkColor);
+        padding: 100px 0;
+        border-radius: 0 100px 0 100px;
+        position: relative;
+        margin-bottom: 300px;
     }
 
     main .sa .imgo {
