@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.google.com/specimen/Public+Sans');
+@import url('https://fonts.google.com/specimen/Overpass?preview.text_type=custom');
+@import url('https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom');
+
+:root{
+    --font-1: 'Crimson Pro', serif;
+    --font-2: 'Montserrat', sans-serif;
+    --font-3: 'Lora', serif;
+    --font-4: 'Montserrat', sans-serif;
+    --font-5: 'Overpass', serif;
+    --font-6: 'Ubuntu', serif;
+    --themeColor: #333333;
+    --darkColor:hsl(208, 49%, 24%);
+    --whiteColor: #fff;
+    --lightDarkColor: #F2F2F2;
+    --linkcolor: #2D9CDB;
+    --linkfocus: #70b4db;
+    --redcolor: hsl(356, 100%, 66%);
+    --verylightred: hsl(355, 100%, 74%);
+    --lightredbg: hsl(13, 100%, 72%);
+    --lightred: hsl(353, 100%, 62%);
+    --graycolor: #808080;
+    --DarkBlue: hsl(240, 2%, 79%);
+    --verydarkblu: hsl(207, 13%, 34%);
+    --footerbg: hsl(240, 10%, 16%);
+    --bgdarkblue: hsl(237, 17%, 21%);
+    --finaldarkblu: hsl(237, 23%, 32%);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    margin-left: 0;
+    width: 100%;
+    color: var(--darkColor);
+    background-color: var(--whiteColor);
+    font-family: var(--font-2);
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+header .br {
+    display: none;
+}
+
+header .nav ul {
+    position: relative;
+    margin: 80px auto;
+    margin-right: 150px;
+    list-style: none;
+}
+
+header .nav .sideone{
+    position: absolute;
+    width: 100px;
+    background-color: var(--whiteColor);
+    padding: 10px 40px;
+    border-radius: 5px;
+    top: 40px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+header .nav .sideone a {
+    color: var(--themeColor);
+}
+
+header .nav .sideone li {
+    display: block;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+header .nav .sidetwo{
+    position: absolute;
+    text-align: center;
+    width: 70px;
+    background-color: var(--whiteColor);
+    padding: 10px 40px;
+    border-radius: 5px;
+    top: 40px;
+    left: 470px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+header .nav .sidetwo li {
+    display: block;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+header .nav .sidetwo a {
+    color: var(--themeColor);
+}
+
+header .nav .sidethree{
+    position: absolute;
+    width: 90px;
+    background-color: var(--whiteColor);
+    padding: 10px 40px;
+    border-radius: 5px;
+    top: 40px;
+    left: 630px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+header .nav .sidethree a {
+    color: var(--themeColor);
+}
+
+header .nav .sideone li:hover, header .nav .sidetwo li:hover, header .nav .sidethree li:hover {
+    font-weight: 600;
+}
+
+header .nav .active {
+    opacity: 1;
+    pointer-events: painted;
+}
+
+header .nav .side ul {
+    list-style: none;
+}
+
+header .nav ul li {
+    color: var(--whiteColor);
+    display: inline;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+header .nav ul li a {
+    text-decoration: none;
+    color: var(--whiteColor);
+    position: relative;
+}
+
+header .nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -6px;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition: all 0.3s;
+    width: 100%;
+    height: 1px;
+    background: var(--whiteColor);
+}
+
+header .nav ul li:hover a::before {
+    transform: scaleX(1);
+}
+
+header .buttons a{
+    text-decoration: none;
+}
+
+header .buttons .one {
+    color: var(--whiteColor);
+    margin-right: 20px;
+}
+
+header .buttons .one:hover {
+    border-bottom: 1px solid white;
+}
+
+header .buttons .two {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--whiteColor);
+    color: var(--redcolor);
+    font-weight: 600;
+}
+
+header .buttons .two:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: var(--whiteColor);
+}
+
+header .navmob {
+    display: none;
+}
+
+main .mainone {
+    background: url('blogr-landing-page-main/images/bg-pattern-intro-mobile.svg'), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-position: left 30% top 51%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    color: var(--whiteColor);
+    padding-top: 210px;
+    padding-bottom: 200px;
+    margin-top: -10px;
+    text-align: center;
+    border-radius: 0 0 0 100px;
+}
+
+main .mainone h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+main .mainone p {
+    margin-top: -20px;
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+main .mainone .buttons a{
+    text-decoration: none;
+}
+
+main .mainone .buttons .one {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--whiteColor);
+    color: var(--redcolor);
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+main .mainone .buttons .one:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: var(--whiteColor);
+}
+
+main .mainone .buttons .two {
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: var(--whiteColor);
+    border: 1px solid white;
+    font-weight: 600;
+}
+
+main .mainone .buttons .two:hover {
+    background-color: hsl(355, 100%, 74%);
+    border: none;
+    color: var(--whiteColor);
+}
+
+main .maintwo {
+    padding: 190px 0;
+}
+
+main .maintwo h2 {
+    font-size: 40px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+main .maintwo .imghid {
+    display: none;
+}
+
+main .maintwo .image {
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 55%;
+}
+
+main .maintwo .txt {
+    width: 500px;
+    position: relative;
+    left: 6%;
+    margin: 90px 0;
+}
+
+main .maintwo .txt .descrp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: start;
+}
+
+main .maintwo .txt h3 {
+    font-size: 25px;
+}
+
+main .maintwo .txt p {
+    line-height: 25px;
+    margin-bottom: 80px;
+    color: var(--graycolor);
+}
+
+main .sa {
+    background: url('blogr-landing-page-main/images/bg-pattern-circles.svg');
+    background-position: left 0% top 51%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    color: var(--whiteColor);
+    background-color: var(--darkColor);
+    padding: 100px 0;
+    border-radius: 0 100px 0 100px;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+main .sa .imgo {
+    position: absolute;
+    height: 900px;
+}
+
+main .sa .imgo img {
+    position: relative;
+    top: -360px;
+    left: -150px;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+main .sa .image {
+    position: absolute;
+}
+
+main .sa .image img {
+    position: relative;
+    top: -180px;
+    left: 120px;
+}
+
+main .sa .txt {
+    position: relative;
+    width: 500px;
+    left: 55%;
+}
+
+main .sa .txt h3 {
+    font-size: 25px;
+}
+
+main .sa .txt p {
+    line-height: 25px;
+}
+
+main .free {
+    position: relative;
+    padding-bottom: 250px;
+}
+
+main .free .imghid {
+    display: none;
+}
+
+main .free .image {
+    position: absolute;
+    top: -150px;
+    left: -300px;
+}
+
+main .free .dscr {
+    width: 500px;
+    position: relative;
+    left: 50%;
+    padding-top: 50px;
+}
+
+main .free .dscr h3 {
+    font-size: 25px;
+}
+
+main .free .dscr p {
+    line-height: 25px;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--footerbg);
+    margin-bottom: -50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 80px 0;
+    color: var(--whiteColor);
+    border-radius: 0 100px 0 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--whiteColor);
+}
+
+footer a:hover {
+    border-bottom: 1px solid white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    line-height: 30px;
+}
+
+footer ul li:first-child {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    header .nav {
+        position: absolute;
+        display: none;
+    }
+    header .navmob {
+        display: block;
+        position: absolute;
+        top: 100px;
+        width: 80%;
+        background-color: var(--whiteColor);
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px;
+        opacity: 0;
+        box-shadow: 0 0 20px 0 black;
+    }
+
+    header .navmob a {
+        text-decoration: none;
+        color: var(--themeColor);
+    }
+
+    header .show {
+        opacity: 1;
+    }
+
+    header .navmob ul {
+        list-style: none;
+        color: var(--themeColor);
+        margin-left: -40px;
+    }
+
+    header .navmob ul li {
+        color: var(--redcolor);
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    header .navmob .one ,header .navmob .two ,header .navmob .three {
+        display: none;
+    }
+
+    header .navmob .act {
+        display: block;
+    }
+
+    header .buttons {
+        position: absolute;
+        display: none;
+    }
+
+    header .br {
+        display: block;
+        color: var(--whiteColor);
+    }
+
+    main .mainone {
+        background: url('blogr-landing-page-main/images/bg-pattern-intro-mobile.svg'), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        background-position: left 30% top 51%;
+        background-size: 200%;
+        background-repeat: no-repeat;
+    }
+
+    main .mainone h1 {
+        font-size: 35px;
+    }
+
+    main .mainone p {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    main .maintwo {
+        margin-top: -90px;
+    }
+
+    main .maintwo h2 {
+        font-size: 25px;
+        width: 90%;
+    }
+
+    main .maintwo .image {
+        display: none;
+    }
+
+    main .maintwo .imghid {
+        display: block;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    main .maintwo .imghid img {
+        width: 100%;
+    }
+
+    main .maintwo .txt {
+        width: 90%;
+        text-align: center;
+    }
+
+    main .maintwo .txt p {
+        color: var(--graycolor);
+    }
+
+    main .sa {
+        background: url('blogr-landing-page-main/images/bg-pattern-circles.svg');
+        background-position: left -100px top -300px;
+        background-size: 200%;
+        background-repeat: no-repeat;
+        color: var(--whiteColor);
+        background-color: var(--darkColor);
+        padding: 100px 0;
+        border-radius: 0 100px 0 100px;
+        position: relative;
+        margin-bottom: 300px;
+    }
+
+    main .sa .imgo {
+        height: 300px;
+    }
+
+    main .sa .imgo img {
+        top: -150px;
+        left: unset;
+    }
+
+    main .sa .image {
+        height: 300px;
+    }
+
+    main .sa .image img {
+        height: 100%;
+        top: -320px;
+        left: unset;
+    }
+
+    main .sa .txt {
+        left: unset;
+        width: 90%;
+        top: 100px;
+        text-align: center;
+        padding-bottom: 90px;
+    }
+
+    main .free {
+        margin-top: -250px;
+    }
+
+    main .free .image {
+        display: none;
+    }
+
+    main .free .imghid {
+        display: block;
+        height: 250px;
+    }
+
+    main .free .imghid img {
+        height: 100%;
+    }
+
+    main .free .dscr {
+        width: 95%;
+        left: unset;
+        text-align: center;
+    }
+
+    main .free .dscr p {
+        color: var(--graycolor);
+    }
+
+    footer {
+        margin-top: -200px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .logo {
+        margin-bottom: 30px;
+        margin-left: 15px;
+    }
+}
