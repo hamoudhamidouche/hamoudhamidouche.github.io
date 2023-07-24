@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.google.com/specimen/Public+Sans');
+@import url('https://fonts.google.com/specimen/Overpass?preview.text_type=custom');
+@import url('https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom');
+
+:root{
+    --font-1: 'Crimson Pro', serif;
+    --font-2: 'Montserrat', sans-serif;
+    --font-3: 'Lora', serif;
+    --font-4: 'Montserrat', sans-serif;
+    --font-5: 'Overpass', serif;
+    --font-6: 'Ubuntu', serif;
+    --themeColor: #333333;
+    --whiteColor: #fff;
+    --Softred: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Darkdesaturatedcyan: hsl(167, 40%, 24%);
+    --Darkblue: hsl(198, 62%, 26%);
+    --Darkmoderatecyan: hsl(168, 34%, 41%);
+    --Verydarkdesaturatedblue: hsl(212, 27%, 19%);
+    --Verydarkgrayishblue: hsl(213, 9%, 39%);
+    --Darkgrayishblue: hsl(232, 10%, 55%);
+    --Grayishblue: hsl(210, 4%, 67%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    margin-left: 0;
+    width: 100%;
+    color: var(--darkColor);
+    background-color: var(--whiteColor);
+    font-family: var(--font-5);
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 10px 50px;
+}
+
+header .brg {
+    display: none;
+}
+
+header .right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 60px;
+    align-items: center;
+}
+
+header .right .nav ul {
+    list-style: none;
+}
+
+header .right .nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+header .right .nav ul li a {
+    text-decoration: none;
+    color: var(--whiteColor);
+    position: relative;
+    font-size: 20px;
+}
+
+header .right .nav ul li a::before {
+    content: '';
+    position: absolute;
+    background: var(--Yellow);
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+header .right .nav ul li:hover a::before {
+    transform: scaleX(1);
+}
+
+header .right .point {
+    display: none;
+}
+
+header .button a {
+    text-decoration: none;
+    color: var(--themeColor);
+    background-color: var(--whiteColor);
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+header .button a:hover {
+    color: var(--whiteColor);
+    background-color: rgba(120, 120, 233, 0.637);
+}
+
+main {
+    width: 100%;
+}
+
+main .one .image {
+    background: url('sunnyside-agency-landing-page-main/images/desktop/image-header.jpg');
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: 100%;
+    height: 80vh;
+    width: 100vw;
+    margin-top: -5px;
+    text-align: center;
+    color: var(--whiteColor);
+    padding-top: 120px;
+    font-size: 40px;
+}
+
+main .two {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+main .two .image {
+    width: 51%;
+    margin-right: -15px;
+}
+
+main .two .image img {
+    width: 100%;
+}
+
+main .two .txt {
+    min-width: 300px;
+    width: 48%;
+}
+
+main .two .txt .dsc {
+    width: 350px;
+    position: relative;
+    top: 20%;
+    left: 20%;
+}
+
+main .two .txt .dsc h1 {
+    font-size: 40px;
+}
+
+main .two .txt .dsc p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+main .two .txt .dsc a {
+    text-decoration: none;
+    color: var(--themeColor);
+    position: relative;
+    font-weight: 900;
+}
+
+main .two .txt .dsc  a::before {
+    content: '';
+    position: absolute;
+    background: var(--Yellow);
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+main .two .txt .dsc .more:hover a::before {
+    transform: scaleX(1);
+}
+
+main .three {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -4px;
+}
+
+main .three .image {
+    width: 50%;
+}
+
+main .three .image img {
+    width: 100%;
+}
+
+main .three .txt {
+    min-width: 300px;
+    width: 48%;
+}
+
+main .three .txt .dsc {
+    width: 370px;
+    position: relative;
+    top: 20%;
+    left: 20%;
+}
+
+main .three .txt .dsc h1 {
+    font-size: 40px;
+}
+
+main .three .txt .dsc p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+main .three .txt .dsc a {
+    text-decoration: none;
+    color: var(--themeColor);
+    position: relative;
+    font-weight: 900;
+}
+
+main .three .txt .dsc  a::before {
+    content: '';
+    position: absolute;
+    background: var(--Softred);
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+main .three .txt .dsc .more:hover a::before {
+    transform: scaleX(1);
+}
+
+main .four {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -4px;
+}
+
+main .four .leftimg {
+    background: url('sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg');
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: 100%;
+    width: 50%;
+    height: 500px;
+}
+
+main .four .leftimg .txt {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 300px;
+    color: var(--Darkdesaturatedcyan);
+    text-align: center;
+    font-size: 110%;
+}
+
+main .four .rightimg {
+    background: url('sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg');
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: 100%;
+    width: 50%;
+    height: 500px;
+}
+
+main .four .rightimg .txt {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 300px;
+    color: var(--Darkblue);
+    text-align: center;
+    font-size: 110%;
+}
+
+main .five {
+    text-align: center;
+    margin: 100px 0;
+}
+
+main .five h3 {
+    margin: 100px 0;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: var(--Darkgrayishblue);
+}
+
+main .five .flx {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main .five .flx .view {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+main .five .flx .view .image {
+    width: 80px;
+    height: 80px;
+}
+
+main .five .flx .view .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+
+main .five .flx .view p {
+    font-weight: 600;
+    color: var(--Darkblue);
+}
+
+main .five .flx .view .auth p {
+    margin-top: -20px;
+}
+
+main .six {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+main .single img {
+    width: 100%;
+}
+
+
+footer {
+    margin-top: -30px;
+    margin-bottom: -20px;
+    padding: 30px 0;
+    width: 100%;
+    background-color: hsl(168, 23%, 46%);
+    color: var(--Darkdesaturatedcyan);
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 40px;
+}
+
+footer .final ul {
+    list-style: none;
+    margin-left: -30px;
+    margin-top: 120px;
+}
+
+footer .final ul li {
+    display: inline;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+footer .final ul li a {
+    text-decoration: none;
+    color: var(--Darkdesaturatedcyan);
+}
+
+footer .final ul li a:hover {
+    color: var(--whiteColor);
+}
+
+footer .final ul li img:hover {
+    color: var(--whiteColor);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    header .right {
+        position: absolute;
+        display: block;
+        text-align: center;
+        top: 70px;
+        width: 70%;
+        height: 300px;
+        background-color: hsl(50, 56%, 91%);
+        border-radius: 5px;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    header .show {
+        opacity: 1;
+        pointer-events: painted;
+    }
+
+    header .right .point {
+        display: block;
+        width: 60px;
+        height: 90px;
+        background-color: hsl(50, 56%, 91%);
+        position: absolute;
+        top: -20px;
+        left: 76%;
+        rotate: 45deg;
+    }
+
+    header .brg {
+        display: block;
+        color: var(--whiteColor);
+    }
+
+    header .right .nav ul {
+        margin-left: -40px;
+    }
+
+    header .right .nav ul li {
+        display: block;
+    }
+
+    header .right .nav ul li a {
+        color: var(--themeColor);
+    }
+
+    header .right .button a {
+        background-color: var(--Yellow);
+    }
+
+    main .one .image {
+        height: 215px;
+        font-size: 20px;
+        padding-top: 60px;
+    }
+
+    main .two {
+        margin-left: -15px;
+        margin-bottom: 90px;
+    }
+
+    main .two .image, main .two .txt, main .three .image {
+        width: 100%;
+    }
+
+    main .three {
+        margin-bottom: 90px;
+    }
+
+    main .four .leftimg, main .four .rightimg {
+        width: 100%;
+    }
+
+    main .four .leftimg .txt, main .four .rightimg .txt {
+        margin-top: 210px;
+    }
+
+    main .four .rightimg {
+        margin-top: -100px;
+    }
+
+    main .five {
+        margin-top: -90px;
+    }
+
+    main .five .flx .view {
+        margin-bottom: 60px;
+    }
+
+    main .six {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
